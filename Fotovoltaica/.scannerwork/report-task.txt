@@ -1,0 +1,6 @@
+projectKey=Fotovoltaico
+serverUrl=http://qa.abth.co:9004
+serverVersion=10.0.0.68432
+dashboardUrl=http://qa.abth.co:9004/dashboard?id=Fotovoltaico
+ceTaskId=AYjFw6_lhy9nbIDZZTx6
+ceTaskUrl=http://qa.abth.co:9004/api/ce/task?id=AYjFw6_lhy9nbIDZZTx6

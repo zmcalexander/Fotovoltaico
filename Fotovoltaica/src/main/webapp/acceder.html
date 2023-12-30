@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="bulma.css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Sistema Fotovoltaico</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+<script type="text/javascript">
+function ValidateEmail(emailId)
+{
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(emailId.value.match(mailformat))
+    {
+        document.getElementById('password').focus();
+        return true;
+    }
+    else
+    {
+        alert("You have entered an invalid email address!");
+        document.getElementById('emailId').focus();
+        return false;
+    }
+}
+</script>
+ 
+<!-- End of client side validations that need to be handled
+     in javascript, it can be handled in separate file or in same jsp -->
+</head>
+
+<body>
+    <div align="center">
+        <h1>Sistema Fotovoltaico</h1>
+        <form action="login" method="post">
+            <table>
+                <tr>
+                    <td>Usuario</td>
+                    <td><input type="text" name="username" /></td>
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td><input type="password" name="password" /></td>
+                </tr>
+                <tr>
+             		<td colspan='2' align="center"><input type="submit" align="center" name="submit" value="Iniciar Sesión" class="button-40" role="button" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
